@@ -1,11 +1,11 @@
-#TransferAccelerator
+# TransferAccelerator
 
 TransferAccelerator is a proxy utility to connect clients to multiple replicas of the same server.
 Users can also use TransferAccelerator to setup multiple ssh tunnels via jump-host to a single
 server.
 
 
-##Building:
+## Building:
 
 To build TransferAccelerator you need to first install JDK and maven. You can then build a jar by running:
 
@@ -16,7 +16,7 @@ mvn package
 After building, maven stores Jar file in target/ subdirectory.
 
 
-##Testing:
+## Testing:
 
 For testing, please run:
 
@@ -24,7 +24,7 @@ For testing, please run:
 mvn test
 ```
 
-##Usage:
+## Usage:
 
 Once you build jar file, you can run it using:
 ```
@@ -34,7 +34,7 @@ java -jar target/TransferAccelerator-0.0.1-jar-with-dependencies.jar
 It will print out supported command line arguments.
 
 
-##Use Cases:
+## Use Cases:
 
 - Case 1: Connect to replica servers:
 
@@ -78,7 +78,7 @@ And one example with local access to Hadoop:
 hdfs dfs -ls webhdfs://localhost:14000/
 ```
 
-##Monitoring:
+## Monitoring:
 
 TransferAccelerator publishes status via http interface running by default on port 48138 (can be overriden using -w,--webstatus_port <STATUS_PORT> command line flag).
 
